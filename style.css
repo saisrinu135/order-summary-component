@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.container h1 {
+    margin: 1.2rem 0;
+}
+
+.banner-image img {
+    border-top-right-radius: 1.2rem;
+    border-top-left-radius: 1.2rem;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.plan a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.plan a:hover{
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.price p {
+    margin: 0;
+}
+
+p {
+    color: var(--desaturated-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.payment-btn {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--bright-blue);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 4.2rem;
+    border-radius: 0.6rem;
+    border: 0;
+    color: #ffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.cancel-btn {
+    background-color: #ffff;
+    color: var(--desaturated-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    border: 0;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    padding: 1.2rem 4.2rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+}
+
+a.payment-btn:hover{
+    background-color: hsl(255, 80%, 60%);
+}
+
+a.cancel-btn:hover{
+    color: var(--dark-blue);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
